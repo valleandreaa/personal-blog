@@ -182,7 +182,8 @@ a { text-decoration: none; }
   margin: 0;
   font: 400 36px/1.15 "Petrona", serif;
 }
-.publication-arrow { font-size: 18px; }
+.link-arrow, .publication-arrow { flex: none; }
+.publication-arrow { width: 18px; height: 18px; }
 .publication-content > a:hover h3 { color: var(--signal); }
 .authors {
   margin: 20px 0 8px;
@@ -306,6 +307,7 @@ footer {
   text-transform: uppercase;
 }
 footer p { margin: 0; }
+footer a { display: inline-flex; align-items: center; gap: 7px; }
 
 @media (max-width: 700px) {
   .page { width: calc(100% - 32px); }
